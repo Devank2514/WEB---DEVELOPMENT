@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Experiments</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent: #8b5cf6;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+        }
+
+        .card .exp-num {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        footer {
+            margin-top: 4rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Experiments</h1>
+        <p style="color: var(--text-dim)">A collection of web development labs and projects.</p>
+    </header>
+
+    <main class="grid">
+        <a href="Exp1.html" class="card">
+            <span class="exp-num">Exp 1</span>
+            <h3>My Static Web Page</h3>
+            <p>Hello world basic structure.</p>
+        </a>
+
+        <a href="Exp2.html" class="card">
+            <span class="exp-num">Exp 2</span>
+            <h3>Text Formatting Tags</h3>
+            <p>Exploring HTML formatting elements.</p>
+        </a>
+
+        <a href="Exp3.html" class="card">
+            <span class="exp-num">Exp 3</span>
+            <h3>About Me / Personal Info</h3>
+            <p>Static web page with personal details.</p>
+        </a>
+
+        <a href="Exp4.html" class="card">
+            <span class="exp-num">Exp 4</span>
+            <h3>All HTML List Tags</h3>
+            <p>Demonstration of ordered and unordered lists.</p>
+        </a>
+
+        <a href="Exp5.html" class="card">
+            <span class="exp-num">Exp 5</span>
+            <h3>My Image Webpage</h3>
+            <p>Working with images and captions.</p>
+        </a>
+
+        <a href="Exp6.html" class="card">
+            <span class="exp-num">Exp 6</span>
+            <h3>All Frames in One File</h3>
+            <p>Using frameset and frames layout.</p>
+        </a>
+
+        <a href="Exp7.html" class="card">
+            <span class="exp-num">Exp 7</span>
+            <h3>Link Tag Demonstration</h3>
+            <p>Internal and external hyperlinking.</p>
+        </a>
+
+        <a href="Exp8.html" class="card">
+            <span class="exp-num">Exp 8</span>
+            <h3>Class Time Table</h3>
+            <p>HTML table structure and styling.</p>
+        </a>
+
+        <a href="Exp9.html" class="card">
+            <span class="exp-num">Exp 9</span>
+            <h3>Student Registration Form</h3>
+            <p>Form elements and input types.</p>
+        </a>
+
+        <a href="Exp10/index.html" class="card">
+            <span class="exp-num">Exp 10</span>
+            <h3>Professional Resume</h3>
+            <p>Advanced layout and modern styling.</p>
+        </a>
+
+        <a href="Exp11/library.xml" class="card">
+            <span class="exp-num">Exp 11</span>
+            <h3>Introduction to XML</h3>
+            <p>Data modeling with XML and CSS.</p>
+        </a>
+
+        <a href="Exp12/cdcatlog_output.html" class="card">
+            <span class="exp-num">Exp 12</span>
+            <h3>My CD Collection</h3>
+            <p>XML transformation using XSLT.</p>
+        </a>
+
+        <a href="Exp13/students_output.html" class="card">
+            <span class="exp-num">Exp 13</span>
+            <h3>Students Records</h3>
+            <p>Data mapping and visualization.</p>
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Dev Lab</p>
+    </footer>
+</body>
+</html>
